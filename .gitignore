@@ -177,3 +177,7 @@ pyrightconfig.json
 
 # Default output directory
 backtests/
+
+# macOS files
+.DS_Store
+*/.DS_Store
