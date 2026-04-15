@@ -1,5 +1,5 @@
 from datamodel import OrderDepth, TradingState, Order
-from typing import List, Optional
+from typing import Optional
 import json
 import math
 
@@ -155,7 +155,7 @@ class Trader:
         return best_bid, best_ask, wall_bid, wall_ask
 
     def run(self, state: TradingState):
-        result: dict[Symbol, list[Order]] = {}
+        result: dict[str, list[Order]] = {}
         conversions = 0
         prev_wall_mid = self._load_prev_wall_mid(state.traderData)
         trader_data = ""
